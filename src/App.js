@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React, { useContext, useEffect } from 'react';
 import './App.css';
+import ToggleButton from './ToggleButton';
+import { ThemeContext } from './ThemeContext';
+
+
 
 function App() {
+
+  const {theme} = useContext(ThemeContext);
+
+  //to update the theme className for entire body (for styling)
+  //[] = only run when theme value changes
+  useEffect(() => {
+    document.body.className = theme === 'dark' ? 'dark-theme' : '';
+  }, [theme]);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='app-container'>
+        <h1>Hello Elise.</h1>
+         <ToggleButton/>
     </div>
   );
 }
