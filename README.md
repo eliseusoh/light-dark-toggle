@@ -1,6 +1,10 @@
 ## 🌗 Light-Dark Toggle React App
 Welcome! This is a simple React app that lets you switch between light and dark mode with a single button. Perfect for learning about React Context and theming! 🎨
 
+<img width="1892" height="907" alt="image" src="https://github.com/user-attachments/assets/233ea82a-5c9f-4b20-a9b7-16e322ad30ec" />
+<img width="1900" height="918" alt="image" src="https://github.com/user-attachments/assets/64ef3fdb-1ef9-4398-9d5b-37e0bb80b472" />
+
+
 ---
 
 ## ✨ Features
